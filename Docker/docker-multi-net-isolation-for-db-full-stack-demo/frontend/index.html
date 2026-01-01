@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Multi Network Demo</h1>
+  <button onclick="load()">Call API</button>
+  <pre id="res"></pre>
+
+  <script>
+    function load() {
+      fetch('/api')
+        .then(r => r.json())
+        .then(d => res.innerText = JSON.stringify(d, null, 2))
+    }
+  </script>
+</body>
+</html>

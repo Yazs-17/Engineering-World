@@ -1,0 +1,8 @@
+{
+	"name": "backend",
+	"dependencies": {
+		"pg": "^8.11.0",
+		"@elastic/elasticsearch": "^8.12.0",
+		"redis": "^4.6.0"
+	}
+}
